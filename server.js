@@ -43,8 +43,8 @@ const Email = mongoose.model("Email", emailSchema);
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "kavinduthennakoon222@gmail.com",
-    pass: "gfzh jpwz txgc zank",
+    user: "arenacinema580@gmail.com",
+    pass: "gunn vqnh byck uvzc",
   },
 });
 
@@ -59,10 +59,10 @@ app.post("/sendemail", async (req, res) => {
 
     // Send email using Nodemailer
     await transporter.sendMail({
-      from: "kavinduthennakoon222@gmail.com",
+      from: "arenacinema580@gmail.com",
       to: email,
-      subject: "Subject of your email",
-      text: "Body of your email",
+      subject: "Arena Cinema confirmation mail",
+      text: "Thank you for choosing us to purchase your cinema tickets! Your transaction is confirmed, and your tickets are on their way to your inbox. Get ready for an amazing cinematic experience! 🎬🍿 #MovieTime",
     });
 
     res.status(200).json({ message: "Email sent successfully!" });
