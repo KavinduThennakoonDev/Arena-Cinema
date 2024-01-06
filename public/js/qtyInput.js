@@ -63,10 +63,23 @@ var QtyInput = (function () {
   });
 })();
 
+const prices = {
+  odc: {
+    half: 400,
+    full: 600,
+  },
+  balcony: {
+    half: 700,
+    full: 1000,
+  },
+};
+
 function increaseCount(a, b, availableCountId) {
   var input = b.previousElementSibling;
   var value = parseInt(input.value, 10);
   var odcHalf = document.getElementById(availableCountId);
+  var totalPrice = document.getElementById("total-price");
+
   value = isNaN(value) ? 0 : value;
   value++;
   input.value = value;
@@ -75,19 +88,38 @@ function increaseCount(a, b, availableCountId) {
     pTagValue--;
     odcHalf.innerText = `${pTagValue} available`;
   }
+
+  var seatType = availableCountId.split("-")[0];
+  var seatSize = availableCountId.split("-")[1];
+
+  var price =
+    prices[seatType][seatSize] + parseInt(totalPrice.innerText.split(" ")[1]);
+  totalPrice.innerText = `LKR ${price.toString()}.00`;
 }
 function decreaseCount(a, b, availableCountId) {
   var odcHalf = document.getElementById(availableCountId);
   var input = b.nextElementSibling;
   var value = parseInt(input.value, 10);
+  var totalPrice = document.getElementById("total-price");
+
   if (value > 0) {
     value = isNaN(value) ? 0 : value;
     value--;
     input.value = value;
     var pTagValue = parseInt(odcHalf.innerText, 10);
-    if (!isNaN(pTagValue) && value >= 0) {
-      pTagValue++;
-      odcHalf.innerText = `${pTagValue} Available`;
+    if (value >= 0) {
+      if (!isNaN(pTagValue)) {
+        pTagValue++;
+        odcHalf.innerText = `${pTagValue} Available`;
+      }
+
+      var seatType = availableCountId.split("-")[0];
+      var seatSize = availableCountId.split("-")[1];
+
+      var price =
+        parseInt(totalPrice.innerText.split(" ")[1]) -
+        prices[seatType][seatSize];
+      totalPrice.innerText = `LKR ${price.toString()}.00`;
     }
   }
 }
