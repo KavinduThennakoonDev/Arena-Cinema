@@ -621,66 +621,36 @@
                                   </div>
                                   </div>
                             </div>
-                             <!pay button!> 
-        
-        
-      
- <div id="paypal-button-container"></div>
-        <!-- Sample PayPal credentials (client-id) are included -->
-        <script src="https://www.paypal.com/sdk/js?client-id=AToxfzX78w9nn-jwWlv8TueXZ9Dkt2ThG9U_zrHSqxuZOgDAbC_l_s7jhYtcFqG7_lwDjvffUo0tjjnS&currency=USD&intent=capture&enable-funding=venmo" data-sdk-integration-source="integrationbuilder"></script>
-        <script>
-          const paypalButtonsComponent = paypal.Buttons({
-              // optional styling for buttons
-              // https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/
-              style: {
-                color: "gold",
-                shape: "rect",
-                layout: "vertical"
-              },
+                            <div id="emailForm">
+                             
+                            </div> <form action="/sendemail" method="POST">
+                              <!-- other form fields -->
+                              <input type="email" name="email" placeholder="Enter your email" required>
+                              <button style="padding: 5px 10px; font-size: 14px; background-color: #f3b832; color: white; border: none; border-radius: 5px; cursor: pointer;" onmouseover="this.style.backgroundColor='#FFC200'" onmouseout="this.style.backgroundColor='#f3b832'" type="submit">Confirm Purchase</button>
+                            </form>
+                            
+                            <script>
+                             async function handleButtonClick() {
+  const emailInput = document.getElementById('emailInput');
+  const email = emailInput.value;
 
-              // set up the transaction
-              createOrder: (data, actions) => {
-                  // pass in any options from the v2 orders create call:
-                  // https://developer.paypal.com/api/orders/v2/#orders-create-request-body
-                  const createOrderPayload = {
-                      purchase_units: [
-                          {
-                              amount: {
-                                  value: "8.0"
-                              }
-                          }
-                      ]
-                  };
+  try {
+    // Send email data to the server
+    const response = await fetch('/sendemail', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email }), // Make sure to include the 'email' field in the request body
+    });
 
-                  return actions.order.create(createOrderPayload);
-              },
-
-              // finalize the transaction
-              onApprove: (data, actions) => {
-                  const captureOrderHandler = (details) => {
-                      const payerName = details.payer.name.given_name;
-                      console.log('Transaction completed');
-                  };
-
-                  return actions.order.capture().then(captureOrderHandler);
-              },
-
-              // handle unrecoverable errors
-              onError: (err) => {
-                  console.error('An error prevented the buyer from checking out with PayPal');
-              }
-          });
-
-          paypalButtonsComponent
-              .render("#paypal-button-container")
-              .catch((err) => {
-                  console.error('PayPal Buttons failed to render');
-              });
-        </script>
-			
-
-        
-        <!Pay end!>
+    const data = await response.json();
+    console.log(data.message);
+  } catch (error) {
+    console.error(error);
+  }
+}
+                            </script>
                           </div>
                       </li>
                     </ul>
