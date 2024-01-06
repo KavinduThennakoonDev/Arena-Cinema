@@ -606,83 +606,187 @@
                               </div>
                             </div> -->
 
-                  <div class="w-full">
-                    <p>ODC</p>
-                    <div class="grid grid-cols-2 gap-x-6">
-                      <!-- odc half -->
-                      <div class="flex items-center justify-between">
-                        <div class="h-full flex items-center">
-                          <p style="margin: 0px;">Half</p>
-                        </div>
-                        <div class="py-2 px-3 inline-block bg-white border border-gray-200 rounded-lg"
-                          data-hs-input-number>
-                          <div class="flex items-center gap-x-1.5">
-                            <button type="button"
-                              class="w-6 h-6 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-md border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
-                              data-hs-input-number-decrement onclick='decreaseCount(event, this)'>
-                              <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
-                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M5 12h14" />
-                              </svg>
-                            </button>
-                            <input class="p-0 w-6 bg-transparent border-0 text-gray-800 text-center focus:ring-0"
-                              type="text" value="0" data-hs-input-number-input>
-                            <button type="button"
-                              class="w-6 h-6 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-md border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
-                              data-hs-input-number-increment onclick='increaseCount(event, this)'>
-                              <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
-                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M5 12h14" />
-                                <path d="M12 5v14" />
-                              </svg>
-                            </button>
+                  <div class="grid grid-rows-2 gap-y-10">
+                    <!-- odc -->
+                    <div class="w-full">
+                      <p class="font-bold" style="font-size: 25px;">ODC</p>
+                      <div class="grid grid-cols-2 gap-x-6">
+                        <!-- odc half -->
+                        <div class="grid grid-cols-2 gap-4">
+                          <div class="grid grid-cols-2">
+                            <div class="h-full flex items-center">
+                              <p class="font-bold" style="margin: 0px; font-size: medium;">Half</p>
+                            </div>
+                            <div class="py-2 px-3 inline-block bg-white border border-gray-200 rounded-lg"
+                              data-hs-input-number>
+                              <div class="flex items-center gap-x-1.5">
+                                <button id="odc-half-decrease" type="button"
+                                  class="w-6 h-6 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-md border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+                                  data-hs-input-number-decrement
+                                  onclick='decreaseCount(event, this, "odc-half-available")'>
+                                  <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14" />
+                                  </svg>
+                                </button>
+                                <input id="odc-half-input"
+                                  class="p-0 w-6 bg-transparent border-0 text-gray-800 text-center focus:ring-0"
+                                  type="text" value="0" data-hs-input-number-input>
+                                <button id="odc-half-increase" type="button"
+                                  class="w-6 h-6 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-md border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+                                  data-hs-input-number-increment
+                                  onclick='increaseCount(event, this, "odc-half-available")'>
+                                  <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14" />
+                                    <path d="M12 5v14" />
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="h-full flex items-center">
+                            <p id="odc-half-available" style="margin: 0px; text-transform: capitalize;">100 Available
+                            </p>
                           </div>
                         </div>
-                        <div class="h-full flex items-center">
-                          <p id="odc-half-available" style="margin: 0px; text-transform: capitalize;">100 Available</p>
+                        <!-- odc full -->
+                        <div class="grid grid-cols-2 gap-4">
+                          <div class="grid grid-cols-2">
+                            <div class="h-full flex items-center">
+                              <p class="font-bold" style="margin: 0px; font-size: medium;">Full</p>
+                            </div>
+                            <div class="py-2 px-3 inline-block bg-white border border-gray-200 rounded-lg"
+                              data-hs-input-number>
+                              <div class="flex items-center gap-x-1.5">
+                                <button id="odc-half-decrease" type="button"
+                                  class="w-6 h-6 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-md border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+                                  data-hs-input-number-decrement
+                                  onclick='decreaseCount(event, this, "odc-full-available")'>
+                                  <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14" />
+                                  </svg>
+                                </button>
+                                <input id="odc-full-input"
+                                  class="p-0 w-6 bg-transparent border-0 text-gray-800 text-center focus:ring-0"
+                                  type="text" value="0" data-hs-input-number-input>
+                                <button id="odc-full-increase" type="button"
+                                  class="w-6 h-6 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-md border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+                                  data-hs-input-number-increment
+                                  onclick='increaseCount(event, this, "odc-full-available")'>
+                                  <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14" />
+                                    <path d="M12 5v14" />
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="h-full flex items-center">
+                            <p id="odc-full-available" style="margin: 0px; text-transform: capitalize;">100 Available
+                            </p>
+                          </div>
                         </div>
                       </div>
-                      <!-- odc full -->
-                      <div class="flex items-center justify-between">
-                        <div class="h-full flex items-center">
-                          <p style="margin: 0px;">Full</p>
-                        </div>
-                        <div class="py-2 px-3 inline-block bg-white border border-gray-200 rounded-lg"
-                          data-hs-input-number>
-                          <div class="flex items-center gap-x-1.5">
-                            <button id="odc-full-decrease" type="button"
-                              class="w-6 h-6 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-md border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
-                              data-hs-input-number-decrement onclick='decreaseCount(event, this)'>
-                              <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
-                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M5 12h14" />
-                              </svg>
-                            </button>
-                            <input id="odc-full-increase"
-                              class="p-0 w-6 bg-transparent border-0 text-gray-800 text-center focus:ring-0" type="text"
-                              value="0" data-hs-input-number-input>
-                            <button id="odc-full-increase" type="button"
-                              class="w-6 h-6 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-md border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
-                              data-hs-input-number-increment onclick='increaseCount(event, this)'>
-                              <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
-                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M5 12h14" />
-                                <path d="M12 5v14" />
-                              </svg>
-                            </button>
+                    </div>
+
+                    <!-- balcony -->
+                    <div class="w-full">
+                      <p class="font-bold" style="font-size: 25px;">Balcony</p>
+                      <div class="grid grid-cols-2 gap-x-6">
+                        <!-- balcony half -->
+                        <div class="grid grid-cols-2 gap-4">
+                          <div class="grid grid-cols-2">
+                            <div class="h-full flex items-center">
+                              <p class="font-bold" style="margin: 0px; font-size: medium;">Half</p>
+                            </div>
+                            <div class="py-2 px-3 inline-block bg-white border border-gray-200 rounded-lg"
+                              data-hs-input-number>
+                              <div class="flex items-center gap-x-1.5">
+                                <button id="balcony-half-decrease" type="button"
+                                  class="w-6 h-6 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-md border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+                                  data-hs-input-number-decrement
+                                  onclick='decreaseCount(event, this, "balcony-half-available")'>
+                                  <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14" />
+                                  </svg>
+                                </button>
+                                <input id="balcony-half-input"
+                                  class="p-0 w-6 bg-transparent border-0 text-gray-800 text-center focus:ring-0"
+                                  type="text" value="0" data-hs-input-number-input>
+                                <button id="balcony-half-increase" type="button"
+                                  class="w-6 h-6 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-md border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+                                  data-hs-input-number-increment
+                                  onclick='increaseCount(event, this, "balcony-half-available")'>
+                                  <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14" />
+                                    <path d="M12 5v14" />
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="h-full flex items-center">
+                            <p id="balcony-half-available" style="margin: 0px; text-transform: capitalize;">50
+                              Available
+                            </p>
                           </div>
                         </div>
-                        <div class="h-full flex items-center">
-                          <p id="odc-full-available" style="margin: 0px; text-transform: capitalize;">100 Available</p>
+                        <!-- balcony full -->
+                        <div class="grid grid-cols-2 gap-4">
+                          <div class="grid grid-cols-2">
+                            <div class="h-full flex items-center">
+                              <p class="font-bold" style="margin: 0px; font-size: medium;">Full</p>
+                            </div>
+                            <div class="py-2 px-3 inline-block bg-white border border-gray-200 rounded-lg"
+                              data-hs-input-number>
+                              <div class="flex items-center gap-x-1.5">
+                                <button id="balcony-half-decrease" type="button"
+                                  class="w-6 h-6 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-md border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+                                  data-hs-input-number-decrement
+                                  onclick='decreaseCount(event, this, "balcony-full-available")'>
+                                  <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14" />
+                                  </svg>
+                                </button>
+                                <input id="balcony-full-input"
+                                  class="p-0 w-6 bg-transparent border-0 text-gray-800 text-center focus:ring-0"
+                                  type="text" value="0" data-hs-input-number-input>
+                                <button id="balcony-full-increase" type="button"
+                                  class="w-6 h-6 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-md border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+                                  data-hs-input-number-increment
+                                  onclick='increaseCount(event, this, "balcony-full-available")'>
+                                  <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14" />
+                                    <path d="M12 5v14" />
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="h-full flex items-center">
+                            <p id="balcony-full-available" style="margin: 0px; text-transform: capitalize;">50
+                              Available
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-
                   <button class="btn-green done" type="submit">Go to Step 3 <i class="fa fa-angle-right"
                       aria-hidden="true"></i></button>
                 </div>

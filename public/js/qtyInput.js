@@ -63,10 +63,10 @@ var QtyInput = (function () {
   });
 })();
 
-function increaseCount(a, b) {
+function increaseCount(a, b, availableCountId) {
   var input = b.previousElementSibling;
   var value = parseInt(input.value, 10);
-  var odcHalf = document.getElementById("odc-half-available");
+  var odcHalf = document.getElementById(availableCountId);
   value = isNaN(value) ? 0 : value;
   value++;
   input.value = value;
@@ -76,8 +76,8 @@ function increaseCount(a, b) {
     odcHalf.innerText = `${pTagValue} available`;
   }
 }
-function decreaseCount(a, b) {
-  var odcHalf = document.getElementById("odc-half-available");
+function decreaseCount(a, b, availableCountId) {
+  var odcHalf = document.getElementById(availableCountId);
   var input = b.nextElementSibling;
   var value = parseInt(input.value, 10);
   if (value > 0) {
