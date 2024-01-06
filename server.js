@@ -7,10 +7,13 @@ const app = express();
 
 // MongoDB connection
 mongoose
-  .connect("mongodb+srv://admin:admin@cluster0.5fimysd.mongodb.net/?retryWrites=true&w=majority", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(
+    "mongodb+srv://admin:admin@cluster0.hcjjnxy.mongodb.net/?retryWrites=true&w=majority",
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  )
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.error("Error connecting to MongoDB:", err));
 
