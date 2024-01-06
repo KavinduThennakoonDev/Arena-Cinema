@@ -3000,3 +3000,32 @@ li:first-child .wizard-content {
   color: #0052cc;
   user-select: none;
 }
+
+.container-radio {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/**
+  Component
+**/
+
+label-radio {
+  width: 100%;
+}
+
+.card-input-element-radio {
+  display: none;
+}
+
+.card-input-radio {
+  padding: 00px;
+}
+
+.card-input-radio:hover {
+  cursor: pointer;
+}
+
+.card-input-element-radio:checked + .card-input-radio {
+  box-shadow: 0 0 1px 1px #2ecc71;
+}
