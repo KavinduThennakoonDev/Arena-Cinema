@@ -1,803 +1,1112 @@
 <!doctype html>
 <html class="no-js" lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>ABC Cinema</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"> 
-        <link rel="apple-touch-icon" href="images/favicon.ico">
-        <!-- Place favicon.ico in the root directory -->
-        <!-- all css here -->
-        <!-- bootstrap v3.3.6 css -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <!-- animate css -->
-        <link rel="stylesheet" href="css/animate.css">
-        <!-- flaticon css -->
-        <link rel="stylesheet" href="css/flaticon.css">
-        <!-- jquery-ui.min css -->
-        <link rel="stylesheet" href="css/jquery-ui.min.css">
-        <!-- meanmenu css -->
-        <link rel="stylesheet" href="css/meanmenu.min.css">
-        <!-- owl.carousel css -->
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <!-- font-awesome css -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <!-- style css -->
-        <link rel="stylesheet" href="style.css">
-        <!-- responsive css -->
-      
-		<link rel="stylesheet" href="css/responsive.css">
-		<link rel="stylesheet" href="css/demo.css">
-		<link rel="stylesheet" href="css/bokking.css">
-        <!-- modernizr css -->
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
-        <!-- Header Start Here -->
-        <header>
-			<main>
-            <div class="header-area">
-                <div class="container">
-                    <div class="row">
-                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="user-area">
-                          <ul>
-                           <li class="active"><a href="register.html">Register</a></li>
-							   <li class="active"><a href="login.html">Log in</a></li>
-                          </ul>
-                          
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                            <div class="logo-area">
-                                <a href="index.html"><img src="images/arenablack.png" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-11 col-xs-11">
-                            <div class="main-menu">
-                                <nav>
-                                    <ul>
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="trailers.html">Trailers</a></li>
-										<li><a href="movies.html">Movie</a></lI>
-                                        <li><a href="contact.html">Contact</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="col-xs-1">
-                            <div class="header-right">            
-                                <div class="search-area"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-            <div class="mobile-menu-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                             <div class="mobile-menu">
-                                <nav id="dropdown">
-                                    <ul>
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="trailers.html">Trailers</a></li>
-                                        <li><a href="shows.html">Shows</a></li>
-                                        <li><a href="rent.html">Rent The Cinema</a></li>
-                                        <li class="active"><a href="#">Pages</a>
-                                            <ul>
-                                                <li><a href="show-details.html">Show Details</a></li>
-                                                <li><a href="buy-movie-ticket.html">Purchase Your Entry</a></li>
-                                                <li><a href="calender.html">Movie Calender</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                    </ul>
-                                </nav>
-                            </div>          
-                        </div>
-                    </div>
-                </div>
-            </div>            
-            <div class="search-box-area">
-                <div class="container">
-                      <div class="row">                          
-                          <div class="search-form">
-                              <form>
-                                  <div class="col-sm-12">
-                                      <div class="form-group">
-                                          <input type="text" class="form-control" placeholder="Search Here...">
-                                          <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-                                      </div>
-                                  </div>
-                              </form>
-                          </div>
-                      </div>
-                  </div>              
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>ABC Cinema</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/favicon.ico">
+  <!-- Place favicon.ico in the root directory -->
+  <!-- all css here -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- bootstrap v3.3.6 css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- animate css -->
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- flaticon css -->
+  <link rel="stylesheet" href="css/flaticon.css">
+  <!-- jquery-ui.min css -->
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <!-- meanmenu css -->
+  <link rel="stylesheet" href="css/meanmenu.min.css">
+  <!-- owl.carousel css -->
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <!-- font-awesome css -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <!-- style css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- responsive css -->
+
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/demo.css">
+  <link rel="stylesheet" href="css/bokking.css">
+  <!-- modernizr css -->
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+  <!-- Header Start Here -->
+  <header>
+    <main>
+      <div class="header-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="user-area">
+                <ul>
+                  <li class="active"><a href="register.html">Register</a></li>
+                  <li class="active"><a href="login.html">Log in</a></li>
+                </ul>
+
+              </div>
             </div>
-        </header>
-        <!-- Header End Here -->
-        <!-- Breadcumb Area Start Here -->
-        <div class="breadcumb-area">
-            <div class="container-fluid acurate">
-                <div class="row">
-                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                        
-                    </div>
-                </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+              <div class="logo-area">
+                <a href="index.html"><img src="images/arenablack.png" alt=""></a>
+              </div>
             </div>
-        </div>
-        <!-- Breadcumb Area End Here -->
-        <!-- Trailers Area Start Here -->
-        <div class="trailers-area">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="heading-title">
-                </div>
+            <div class="col-lg-8 col-md-8 col-sm-11 col-xs-11">
+              <div class="main-menu">
+                <nav>
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="trailers.html">Trailers</a></li>
+                    <li><a href="movies.html">Movie</a></lI>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="col-xs-1">
+              <div class="header-right">
+                <div class="search-area"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
               </div>
             </div>
           </div>
         </div>
-        <!-- Trailers Area End Here -->
-       <!-- Single Movie Start Here -->
-        <div class="single-movie-area">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                <div class="single-movie-content threee">
-                  <ul class="payment-wizard">
-                      <li class="active">
-						  <br><br><br><br>
-                          <div class="wizard-heading"><span>1</span>Entries</div>
-                            <div class="wizard-content">
-                              <div class="panel-body">
-                                <b>Select the Tickets:</b>
-                                
-                               <div class="row">
-    <nav class="top-bar" data-topbar>
-       
-       
-    </nav>
-								   <div class="medium-8 columns">
-        
-        <div class="products">
-            
-    <div class="medium-4  columns">
-       
-      
-    </div>
-   
+      </div>
+      <div class="mobile-menu-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="mobile-menu">
+                <nav id="dropdown">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="trailers.html">Trailers</a></li>
+                    <li><a href="shows.html">Shows</a></li>
+                    <li><a href="rent.html">Rent The Cinema</a></li>
+                    <li class="active"><a href="#">Pages</a>
+                      <ul>
+                        <li><a href="show-details.html">Show Details</a></li>
+                        <li><a href="buy-movie-ticket.html">Purchase Your Entry</a></li>
+                        <li><a href="calender.html">Movie Calender</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="search-box-area">
+        <div class="container">
+          <div class="row">
+            <div class="search-form">
+              <form>
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search Here...">
+                    <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  </header>
+  <!-- Header End Here -->
+  <!-- Breadcumb Area Start Here -->
+  <div class="breadcumb-area">
+    <div class="container-fluid acurate">
+      <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+        </div>
+      </div>
     </div>
-</div>
-<script type="text/template" id="cartT">
-  
+  </div>
+  <!-- Breadcumb Area End Here -->
+  <!-- Trailers Area Start Here -->
+  <div class="trailers-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="heading-title">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Trailers Area End Here -->
+  <!-- Single Movie Start Here -->
+  <div class="single-movie-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+          <div class="single-movie-content threee">
+            <ul class="payment-wizard">
+              <li class="active">
+                <br><br><br><br>
+                <div class="wizard-heading"><span>1</span>Entries</div>
+                <div class="wizard-content">
+                  <div class="panel-body">
+                    <b>Select the Tickets:</b>
+
+                    <div class="row">
+                      <nav class="top-bar" data-topbar>
+
+
+                      </nav>
+                      <div class="medium-8 columns">
+
+                        <div class="products">
+
+                          <div class="medium-4  columns">
+
+
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <script type="text/template" id="cartT">
+
 </script>
-								  </main>
-                               
-                                
-                                <div class="promo-ad-area">
-                                  <img src="images/promo-ad.png" alt="">
-                                </div>
-                               
-                              </div>
-                              <button class="btn-green done" type="submit">Go to Step 2 <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                    </main>
+
+
+                    <div class="promo-ad-area">
+                      <img src="images/promo-ad.png" alt="">
+                    </div>
+
+                  </div>
+                  <button class="btn-green done" type="submit">Go to Step 2 <i class="fa fa-angle-right"
+                      aria-hidden="true"></i></button>
+                </div>
+              </li>
+              <li>
+                <div class="wizard-heading wizard-bor">
+                  <span>2</span> Seats
+                </div>
+                <div class="wizard-content seats">
+                  <!-- <div class="selected-seat">
+                    <ul>
+                      <li><span></span>Selected Seats</li>
+                      <li><span></span>Free Seats</li>
+                      <li><span><i class="fa fa-wheelchair" aria-hidden="true"></i></span>Wheelchair Seats</li>
+                      <li><span></span>Unavailable Seats</li>
+                    </ul>
+                  </div> -->
+                  <!-- <div class="seats-table">
+                    <div class="table-responsive">
+                      <table class="table">
+                                 <tbody>
+                          <tr>
+                            <td class="number">14</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="1" />1</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="2" />2</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="3" />3</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="4" />4</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="5" />5</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="6" />6</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="7" />7</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="8" />8</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="9" />9</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="10" />10</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="11" />11</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="12" />12</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="13" />13</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="14" />14</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="15" />15</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="16" />16</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="17" />17</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="18" />18</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="19" />19</td>
+                            <td class="number">14</td>
+                          </tr>
+                          <tr>
+                            <td class="number">13</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="1" />1</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="2" />2</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="3" />3</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="4" />4</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="5" />5</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="6" />6</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="7" />7</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="8" />8</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="9" />9</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="10" />10</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="11" />11</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="12" />12</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="13" />13</td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="16" />16</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="17" />17</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="18" />18</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="19" />19</td>
+                            <td class="number">13</td>
+                          </tr>
+                          <tr>
+                            <td class="number">12</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="1" />1</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="2" />2</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="3" />3</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="4" />4</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="5" />5</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="6" />6</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="7" />7</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="8" />8</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="9" />9</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="10" />10</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="11" />11</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="12" />12</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="13" />13</td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="16" />16</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="17" />17</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="18" />18</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="19" />19</td>
+                            <td class="number">12</td>
+                          </tr>
+                          <tr>
+                            <td class="number">11</td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="unavailable click-seat"><input type="checkbox" value="4" />4</td>
+                            <td class="unavailable click-seat"><input type="checkbox" value="5" />5</td>
+                            <td class="unavailable click-seat"><input type="checkbox" value="6" />6</td>
+                            <td class="unavailable click-seat"><input type="checkbox" value="7" />7</td>
+                            <td class="unavailable click-seat"><input type="checkbox" value="8" />8</td>
+                            <td class="unavailable click-seat"><input type="checkbox" value="9" />9</td>
+                            <td class="unavailable click-seat"><input type="checkbox" value="10" />10</td>
+                            <td class="unavailable click-seat"><input type="checkbox" value="11" />11</td>
+                            <td class="unavailable click-seat"><input type="checkbox" value="12" />12</td>
+                            <td class="unavailable click-seat"><input type="checkbox" value="13" />13</td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="16" />16</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="17" />17</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="18" />18</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="19" />19</td>
+                            <td class="number">11</td>
+                          </tr>
+                          <tr>
+                            <td class="number">10</td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="unavailable click-seat"><input type="checkbox" value="4" />4</td>
+                            <td class="unavailable click-seat"><input type="checkbox" value="5" />5</td>
+                            <td class="unavailable click-seat"><input type="checkbox" value="6" />6</td>
+                            <td class="unavailable click-seat"><input type="checkbox" value="7" />7</td>
+                            <td class="unavailable click-seat"><input type="checkbox" value="8" />8</td>
+                            <td class="unavailable click-seat"><input type="checkbox" value="9" />9</td>
+                            <td class="unavailable click-seat"><input type="checkbox" value="10" />10</td>
+                            <td class="unavailable click-seat"><input type="checkbox" value="11" />11</td>
+                            <td class="unavailable click-seat"><input type="checkbox" value="12" />12</td>
+                            <td class="unavailable click-seat"><input type="checkbox" value="13" />13</td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="16" />16</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="17" />17</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="18" />18</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="19" />19</td>
+                            <td class="number">10</td>
+                          </tr>
+                          <tr>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                          </tr>
+                          <tr>
+                            <td class="number">9</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="1" />1</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="5" />2</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="3" />3</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="4" />4</td>
+                            <td class="whilechair"><span><i class="fa fa-wheelchair" aria-hidden="true"></i></span></td>
+                            <td class="whilechair"><span><i class="fa fa-wheelchair" aria-hidden="true"></i></span></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="whilechair"><span><i class="fa fa-wheelchair" aria-hidden="true"></i></span></td>
+                            <td class="whilechair"><span><i class="fa fa-wheelchair" aria-hidden="true"></i></span></td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="12" />12</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="13" />13</td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="16" />16</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="17" />17</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="18" />18</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="19" />19</td>
+                            <td class="number">9</td>
+                          </tr>
+                          <tr>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                          </tr>
+                          <tr>
+                            <td class="number">8</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="1" />1</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="2" />2</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="3" />3</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="4" />4</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="5" />5</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="6" />6</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="7" />7</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="8" />8</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="9" />9</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="10" />10</td>
+                            <td class="selected-seat click-seat"><input type="checkbox" value="11" />11</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="12" />12</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="13" />13</td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="16" />16</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="17" />17</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="18" />18</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="19" />19</td>
+                            <td class="number">8</td>
+                          </tr>
+                          <tr>
+                            <td class="number">7</td>
+                            <td class="whilechair"><span><i class="fa fa-wheelchair" aria-hidden="true"></i></span></td>
+                            <td class="whilechair"><span><i class="fa fa-wheelchair" aria-hidden="true"></i></span></td>
+                            <td class="whilechair"><span><i class="fa fa-wheelchair" aria-hidden="true"></i></span></td>
+                            <td class="whilechair"><span><i class="fa fa-wheelchair" aria-hidden="true"></i></span></td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="5" />5</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="6" />6</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="7" />7</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="8" />8</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="9" />9</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="10" />10</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="11" />11</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="12" />12</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="13" />13</td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="16" />16</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="17" />17</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="18" />18</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="19" />19</td>
+                            <td class="number">7</td>
+                          </tr>
+                          <tr>
+                            <td class="number">6</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="1" />1</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="2" />2</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="3" />3</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="4" />4</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="5" />5</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="6" />6</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="7" />7</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="8" />8</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="9" />9</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="10" />10</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="11" />11</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="12" />12</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="13" />13</td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="16" />16</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="17" />17</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="18" />18</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="19" />19</td>
+                            <td class="number">6</td>
+                          </tr>
+                          <tr>
+                            <td class="number">5</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="1" />1</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="2" />2</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="3" />3</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="4" />4</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="5" />5</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="6" />6</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="7" />7</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="8" />8</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="9" />9</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="10" />10</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="11" />11</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="12" />12</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="13" />13</td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="16" />16</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="17" />17</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="18" />18</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="19" />19</td>
+                            <td class="number">5</td>
+                          </tr>
+                          <tr>
+                            <td class="number">4</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="1" />1</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="2" />2</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="3" />3</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="4" />4</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="5" />5</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="6" />6</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="7" />7</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="8" />8</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="9" />9</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="10" />10</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="11" />11</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="12" />12</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="13" />13</td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="16" />16</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="17" />17</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="18" />18</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="19" />19</td>
+                            <td class="number">4</td>
+                          </tr>
+                          <tr>
+                            <td class="number">3</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="1" />1</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="2" />2</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="3" />3</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="4" />4</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="5" />5</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="6" />6</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="7" />7</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="8" />8</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="9" />9</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="10" />10</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="11" />11</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="12" />12</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="13" />13</td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="16" />16</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="17" />17</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="18" />18</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="19" />19</td>
+                            <td class="number">3</td>
+                          </tr>
+                          <tr>
+                            <td class="number">2</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="1" />1</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="2" />2</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="3" />3</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="4" />4</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="5" />5</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="6" />6</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="7" />7</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="8" />8</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="9" />9</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="10" />10</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="11" />11</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="12" />12</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="13" />13</td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="16" />16</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="17" />17</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="18" />18</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="19" />19</td>
+                            <td class="number">2</td>
+                          </tr>
+                          <tr>
+                            <td class="number">1</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="1" />1</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="2" />2</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="3" />3</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="4" />4</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="5" />5</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="6" />6</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="7" />7</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="8" />8</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="9" />9</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="10" />10</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="11" />11</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="12" />12</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="13" />13</td>
+                            <td class="white-space"></td>
+                            <td class="white-space"></td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="16" />16</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="17" />17</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="18" />18</td>
+                            <td class="free-seat click-seat"><input type="checkbox" value="19" />19</td>
+                            <td class="number">1</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="screen-button">
+                      <a href="#">Screen Is Here</a>
+                    </div>
+                  </div> -->
+
+
+                  <!-- time -->
+                  <div class="container-radio">
+                    <p class="font-bold" style="font-size: 25px;">Time</p>
+                    <div class="row">
+                      <div class="col-md-4 col-lg-4 col-sm-4">
+                        <label class="label-radio">
+                          <input type="radio" name="product" class="card-input-element-radio" />
+                          <div class="panel panel-default card-input-radio">
+                            <div class="panel-body">
+                              10.00 AM - 12.30 PM
                             </div>
-                      </li>
-                      <li>
-                        <div class="wizard-heading wizard-bor">
-                            <span>2</span> Seats
                           </div>
-                          <div class="wizard-content seats">
-                            <div class="selected-seat">
-                              <ul>
-                                <li><span></span>Selected Seats</li>
-                                <li><span></span>Free Seats</li>
-                                <li><span><i class="fa fa-wheelchair" aria-hidden="true"></i></span>Wheelchair Seats</li>
-                                <li><span></span>Unavailable Seats</li>
-                              </ul>
+                        </label>
+                      </div>
+                      <div class="col-md-4 col-lg-4 col-sm-4">
+                        <label>
+                          <input type="radio" name="product" class="card-input-element-radio" />
+
+                          <div class="panel panel-default card-input-radio">
+                            <div class="panel-body">
+                              3.30 PM - 6.00 PM
                             </div>
-                            <div class="seats-table">
-                              <div class="table-responsive">
-                                <table class="table">
-                                  <tbody>
-                                    <tr>
-                                      <td class="number">14</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="1"/>1</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="2"/>2</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="3"/>3</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="4"/>4</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="5"/>5</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="6"/>6</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="7"/>7</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="8"/>8</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="9"/>9</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="10"/>10</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="11"/>11</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="12"/>12</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="13"/>13</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="14"/>14</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="15"/>15</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="16"/>16</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="17"/>17</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="18"/>18</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="19"/>19</td>
-                                      <td class="number">14</td>
-                                    </tr> 
-                                    <tr>
-                                      <td class="number">13</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="1"/>1</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="2"/>2</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="3"/>3</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="4"/>4</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="5"/>5</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="6"/>6</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="7"/>7</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="8"/>8</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="9"/>9</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="10"/>10</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="11"/>11</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="12"/>12</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="13"/>13</td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="16"/>16</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="17"/>17</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="18"/>18</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="19"/>19</td>
-                                      <td class="number">13</td>
-                                    </tr> 
-                                    <tr>
-                                      <td class="number">12</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="1"/>1</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="2"/>2</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="3"/>3</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="4"/>4</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="5"/>5</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="6"/>6</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="7"/>7</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="8"/>8</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="9"/>9</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="10"/>10</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="11"/>11</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="12"/>12</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="13"/>13</td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="16"/>16</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="17"/>17</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="18"/>18</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="19"/>19</td>
-                                      <td class="number">12</td>
-                                    </tr> 
-                                    <tr>
-                                      <td class="number">11</td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="unavailable click-seat"><input type="checkbox" value="4"/>4</td>
-                                      <td class="unavailable click-seat"><input type="checkbox" value="5"/>5</td>
-                                      <td class="unavailable click-seat"><input type="checkbox" value="6"/>6</td>
-                                      <td class="unavailable click-seat"><input type="checkbox" value="7"/>7</td>
-                                      <td class="unavailable click-seat"><input type="checkbox" value="8"/>8</td>
-                                      <td class="unavailable click-seat"><input type="checkbox" value="9"/>9</td>
-                                      <td class="unavailable click-seat"><input type="checkbox" value="10"/>10</td>
-                                      <td class="unavailable click-seat"><input type="checkbox" value="11"/>11</td>
-                                      <td class="unavailable click-seat"><input type="checkbox" value="12"/>12</td>
-                                      <td class="unavailable click-seat"><input type="checkbox" value="13"/>13</td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="16"/>16</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="17"/>17</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="18"/>18</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="19"/>19</td>
-                                      <td class="number">11</td>
-                                    </tr> 
-                                    <tr>
-                                      <td class="number">10</td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="unavailable click-seat"><input type="checkbox" value="4"/>4</td>
-                                      <td class="unavailable click-seat"><input type="checkbox" value="5"/>5</td>
-                                      <td class="unavailable click-seat"><input type="checkbox" value="6"/>6</td>
-                                      <td class="unavailable click-seat"><input type="checkbox" value="7"/>7</td>
-                                      <td class="unavailable click-seat"><input type="checkbox" value="8"/>8</td>
-                                      <td class="unavailable click-seat"><input type="checkbox" value="9"/>9</td>
-                                      <td class="unavailable click-seat"><input type="checkbox" value="10"/>10</td>
-                                      <td class="unavailable click-seat"><input type="checkbox" value="11"/>11</td>
-                                      <td class="unavailable click-seat"><input type="checkbox" value="12"/>12</td>
-                                      <td class="unavailable click-seat"><input type="checkbox" value="13"/>13</td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="16"/>16</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="17"/>17</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="18"/>18</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="19"/>19</td>
-                                      <td class="number">10</td>
-                                    </tr> 
-                                    <tr>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                    </tr> 
-                                    <tr>
-                                      <td class="number">9</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="1"/>1</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="5"/>2</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="3"/>3</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="4"/>4</td>
-                                      <td class="whilechair"><span><i class="fa fa-wheelchair" aria-hidden="true"></i></span></td>
-                                      <td class="whilechair"><span><i class="fa fa-wheelchair" aria-hidden="true"></i></span></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>                             
-                                      <td class="whilechair"><span><i class="fa fa-wheelchair" aria-hidden="true"></i></span></td>
-                                      <td class="whilechair"><span><i class="fa fa-wheelchair" aria-hidden="true"></i></span></td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="12"/>12</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="13"/>13</td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="16"/>16</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="17"/>17</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="18"/>18</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="19"/>19</td>
-                                      <td class="number">9</td>
-                                    </tr> 
-                                    <tr>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                    </tr> 
-                                    <tr>
-                                      <td class="number">8</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="1"/>1</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="2"/>2</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="3"/>3</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="4"/>4</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="5"/>5</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="6"/>6</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="7"/>7</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="8"/>8</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="9"/>9</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="10"/>10</td>
-                                      <td class="selected-seat click-seat"><input type="checkbox" value="11"/>11</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="12"/>12</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="13"/>13</td>  
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="16"/>16</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="17"/>17</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="18"/>18</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="19"/>19</td>
-                                      <td class="number">8</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="number">7</td>
-                                      <td class="whilechair"><span><i class="fa fa-wheelchair" aria-hidden="true"></i></span></td>
-                                      <td class="whilechair"><span><i class="fa fa-wheelchair" aria-hidden="true"></i></span></td>
-                                      <td class="whilechair"><span><i class="fa fa-wheelchair" aria-hidden="true"></i></span></td>
-                                      <td class="whilechair"><span><i class="fa fa-wheelchair" aria-hidden="true"></i></span></td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="5"/>5</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="6"/>6</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="7"/>7</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="8"/>8</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="9"/>9</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="10"/>10</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="11"/>11</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="12"/>12</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="13"/>13</td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="16"/>16</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="17"/>17</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="18"/>18</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="19"/>19</td>
-                                      <td class="number">7</td>
-                                    </tr> 
-                                    <tr>
-                                      <td class="number">6</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="1"/>1</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="2"/>2</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="3"/>3</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="4"/>4</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="5"/>5</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="6"/>6</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="7"/>7</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="8"/>8</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="9"/>9</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="10"/>10</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="11"/>11</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="12"/>12</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="13"/>13</td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="16"/>16</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="17"/>17</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="18"/>18</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="19"/>19</td>
-                                      <td class="number">6</td>
-                                    </tr> 
-                                    <tr>
-                                      <td class="number">5</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="1"/>1</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="2"/>2</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="3"/>3</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="4"/>4</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="5"/>5</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="6"/>6</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="7"/>7</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="8"/>8</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="9"/>9</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="10"/>10</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="11"/>11</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="12"/>12</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="13"/>13</td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="16"/>16</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="17"/>17</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="18"/>18</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="19"/>19</td>
-                                      <td class="number">5</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="number">4</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="1"/>1</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="2"/>2</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="3"/>3</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="4"/>4</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="5"/>5</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="6"/>6</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="7"/>7</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="8"/>8</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="9"/>9</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="10"/>10</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="11"/>11</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="12"/>12</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="13"/>13</td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="16"/>16</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="17"/>17</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="18"/>18</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="19"/>19</td>
-                                      <td class="number">4</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="number">3</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="1"/>1</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="2"/>2</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="3"/>3</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="4"/>4</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="5"/>5</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="6"/>6</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="7"/>7</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="8"/>8</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="9"/>9</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="10"/>10</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="11"/>11</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="12"/>12</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="13"/>13</td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="16"/>16</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="17"/>17</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="18"/>18</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="19"/>19</td>
-                                      <td class="number">3</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="number">2</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="1"/>1</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="2"/>2</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="3"/>3</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="4"/>4</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="5"/>5</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="6"/>6</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="7"/>7</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="8"/>8</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="9"/>9</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="10"/>10</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="11"/>11</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="12"/>12</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="13"/>13</td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="16"/>16</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="17"/>17</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="18"/>18</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="19"/>19</td>
-                                      <td class="number">2</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="number">1</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="1"/>1</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="2"/>2</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="3"/>3</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="4"/>4</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="5"/>5</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="6"/>6</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="7"/>7</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="8"/>8</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="9"/>9</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="10"/>10</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="11"/>11</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="12"/>12</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="13"/>13</td>
-                                      <td class="white-space"></td>
-                                      <td class="white-space"></td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="16"/>16</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="17"/>17</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="18"/>18</td>
-                                      <td class="free-seat click-seat"><input type="checkbox" value="19"/>19</td>
-                                      <td class="number">1</td>
-                                    </tr> 
-                                  </tbody>
-                                </table>
-                              </div>
-                              <div class="screen-button">
-                                <a href="#">Screen Is Here</a>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-md-4 col-lg-4 col-sm-4">
+                        <label>
+                          <input type="radio" name="product" class="card-input-element-radio" />
+                          <div class="panel panel-default card-input-radio">
+                            <div class="panel-body">
+                              7.30 PM - 10.00 PM
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style="background-color: rgba(128, 128, 128, 0.2); width: 100%; height: 1px; margin-bottom: 20px;">
+                  </div>
+                  <!-- seat type -->
+                  <div class="grid grid-rows-2 gap-y-10">
+                    <!-- odc -->
+                    <div class="w-full">
+                      <p class="font-bold" style="font-size: 25px;">ODC</p>
+                      <div class="grid grid-cols-2 gap-x-6">
+                        <!-- odc half -->
+                        <div class="grid grid-cols-2 gap-4">
+                          <div class="grid grid-cols-2">
+                            <div class="h-full flex items-center">
+                              <p class="font-bold" style="margin: 0px; font-size: medium;">Half</p>
+                            </div>
+                            <div class="py-2 px-3 inline-block bg-white border border-gray-200 rounded-lg"
+                              data-hs-input-number>
+                              <div class="flex items-center gap-x-1.5">
+                                <button id="odc-half-decrease" type="button"
+                                  class="w-6 h-6 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-md border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+                                  data-hs-input-number-decrement
+                                  onclick='decreaseCount(event, this, "odc-half-available")'>
+                                  <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14" />
+                                  </svg>
+                                </button>
+                                <input id="odc-half-input"
+                                  class="p-0 w-6 bg-transparent border-0 text-gray-800 text-center focus:ring-0"
+                                  type="text" value="0" data-hs-input-number-input>
+                                <button id="odc-half-increase" type="button"
+                                  class="w-6 h-6 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-md border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+                                  data-hs-input-number-increment
+                                  onclick='increaseCount(event, this, "odc-half-available")'>
+                                  <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14" />
+                                    <path d="M12 5v14" />
+                                  </svg>
+                                </button>
                               </div>
                             </div>
-                              <button class="btn-green done" type="submit">Go to Step 3 <i class="fa fa-angle-right" aria-hidden="true"></i></button>
-                          </div>
-                      </li>
-                      <li>
-                        <div class="wizard-heading">
-                            <span>3</span> summary & payment
-                          </div>
-                          <div class="wizard-content">
-                            <div class="cinema-sumary-area siixx">
-                              <div class="media">
-                                <div class="pull-left siixx">
-                                  <a href="#">
-                                    <div class="sidebar-image siixx">
-                                      <img src="images/movie/mv2.jpg" alt="">
-                                      <div class="movies-image-head">
-                                      <p>Salaar: Cease Fire - Part 1</p>
-                                      
-                                      </div>
-                                    </div>
-                                  </a>
-                                 
-                                </div>
-                                
-                            </div>
-                            <div class="contact-details">
-                              <h3>Book your ticket</h3>                              
-                             
-                                  <div class="col-sm-12">
-                                    <div class="form-group">
-                                      <div class="connected-area">
-                                        <div class="checkbox">
-                                          <label>
-                                            <input type="checkbox"> I accept all Conditions.</a>
-                                          </label>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  </div>
-                                
-                              
-                            </div>
-                            
+
+
                             <div id="emailForm">
-                             
-                            </div> <form action="/sendemail" method="POST">
+
+                            </div>
+                            <form action="/sendemail" method="POST">
                               <!-- other form fields -->
                               <input type="email" name="email" placeholder="Enter your email" required>
-                              <button style="padding: 5px 10px; font-size: 14px; background-color: #f3b832; color: white; border: none; border-radius: 5px; cursor: pointer;" onmouseover="this.style.backgroundColor='#FFC200'" onmouseout="this.style.backgroundColor='#f3b832'" type="submit">Confirm Purchase</button>
+                              <button
+                                style="padding: 5px 10px; font-size: 14px; background-color: #f3b832; color: white; border: none; border-radius: 5px; cursor: pointer;"
+                                onmouseover="this.style.backgroundColor='#FFC200'"
+                                onmouseout="this.style.backgroundColor='#f3b832'" type="submit">Confirm
+                                Purchase</button>
                             </form>
-                            
+
                             <script>
-                             async function handleButtonClick() {
-  const emailInput = document.getElementById('emailInput');
-  const email = emailInput.value;
+                              async function handleButtonClick() {
+                                const emailInput = document.getElementById('emailInput');
+                                const email = emailInput.value;
 
-  try {
-    // Send email data to the server
-    const response = await fetch('/sendemail', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ email }), // Make sure to include the 'email' field in the request body
-    });
+                                try {
+                                  // Send email data to the server
+                                  const response = await fetch('/sendemail', {
+                                    method: 'POST',
+                                    headers: {
+                                      'Content-Type': 'application/json',
+                                    },
+                                    body: JSON.stringify({ email }), // Make sure to include the 'email' field in the request body
+                                  });
 
-    const data = await response.json();
-    console.log(data.message);
-  } catch (error) {
-    console.error(error);
-  }
-}
+                                  const data = await response.json();
+                                  console.log(data.message);
+                                } catch (error) {
+                                  console.error(error);
+                                }
+                              }
                             </script>
+
                           </div>
-                      </li>
-                    </ul>
+
+
+                        </div>
+                        <div class="h-full flex items-center">
+                          <p id="odc-half-available" style="margin: 0px; text-transform: capitalize;">100 Available
+                          </p>
+                        </div>
+                      </div>
+                      <!-- odc full -->
+                      <div class="grid grid-cols-2 gap-4">
+                        <div class="grid grid-cols-2">
+                          <div class="h-full flex items-center">
+                            <p class="font-bold" style="margin: 0px; font-size: medium;">Full</p>
+                          </div>
+                          <div class="py-2 px-3 inline-block bg-white border border-gray-200 rounded-lg"
+                            data-hs-input-number>
+                            <div class="flex items-center gap-x-1.5">
+                              <button id="odc-half-decrease" type="button"
+                                class="w-6 h-6 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-md border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+                                data-hs-input-number-decrement
+                                onclick='decreaseCount(event, this, "odc-full-available")'>
+                                <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                  height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="M5 12h14" />
+                                </svg>
+                              </button>
+                              <input id="odc-full-input"
+                                class="p-0 w-6 bg-transparent border-0 text-gray-800 text-center focus:ring-0"
+                                type="text" value="0" data-hs-input-number-input>
+                              <button id="odc-full-increase" type="button"
+                                class="w-6 h-6 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-md border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+                                data-hs-input-number-increment
+                                onclick='increaseCount(event, this, "odc-full-available")'>
+                                <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                  height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="M5 12h14" />
+                                  <path d="M12 5v14" />
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="h-full flex items-center">
+                          <p id="odc-full-available" style="margin: 0px; text-transform: capitalize;">100 Available
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <div class="sidebar-area">
-                  <div class="single-sidebar">
-                    <div class="widget">
-                      <h2 class="widget-title">Summary of your Movie</h2>
-                      <div class="sidebar-content">
-                        <p>Salaar: Cease Fire - Part 1</p>
-                        <div class="sidebar-image siixx">
-                          <img src="images/movie/mv2.jpg" alt="">
-                          <div class="movies-image-head">
-                          <p>Salaar: Cease Fire - Part 1 </p>
+
+                  <!-- balcony -->
+                  <div class="w-full">
+                    <p class="font-bold" style="font-size: 25px;">Balcony</p>
+                    <div class="grid grid-cols-2 gap-x-6">
+                      <!-- balcony half -->
+                      <div class="grid grid-cols-2 gap-4">
+                        <div class="grid grid-cols-2">
+                          <div class="h-full flex items-center">
+                            <p class="font-bold" style="margin: 0px; font-size: medium;">Half</p>
+                          </div>
+                          <div class="py-2 px-3 inline-block bg-white border border-gray-200 rounded-lg"
+                            data-hs-input-number>
+                            <div class="flex items-center gap-x-1.5">
+                              <button id="balcony-half-decrease" type="button"
+                                class="w-6 h-6 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-md border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+                                data-hs-input-number-decrement
+                                onclick='decreaseCount(event, this, "balcony-half-available")'>
+                                <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                  height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="M5 12h14" />
+                                </svg>
+                              </button>
+                              <input id="balcony-half-input"
+                                class="p-0 w-6 bg-transparent border-0 text-gray-800 text-center focus:ring-0"
+                                type="text" value="0" data-hs-input-number-input>
+                              <button id="balcony-half-increase" type="button"
+                                class="w-6 h-6 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-md border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+                                data-hs-input-number-increment
+                                onclick='increaseCount(event, this, "balcony-half-available")'>
+                                <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                  height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="M5 12h14" />
+                                  <path d="M12 5v14" />
+                                </svg>
+                              </button>
+                            </div>
                           </div>
                         </div>
-                        <div class="details">                          
-                          <ul>
-                           <li><span>Place: </span> Arena Cinema - Galle</li>
-                            <li><span>Time :11.30am&nbsp; &nbsp; </span> </li>
-                            <li class="entry"><span>Entries:<br>
-                              1x Normal</span>&nbsp;</li>
-                            <li class="entry">&nbsp; <h1><span>LKR .650.00</span></h1></li>
-                          </ul>
+                        <div class="h-full flex items-center">
+                          <p id="balcony-half-available" style="margin: 0px; text-transform: capitalize;">50
+                            Available
+                          </p>
                         </div>
-                       
-                       
+                      </div>
+                      <!-- balcony full -->
+                      <div class="grid grid-cols-2 gap-4">
+                        <div class="grid grid-cols-2">
+                          <div class="h-full flex items-center">
+                            <p class="font-bold" style="margin: 0px; font-size: medium;">Full</p>
+                          </div>
+                          <div class="py-2 px-3 inline-block bg-white border border-gray-200 rounded-lg"
+                            data-hs-input-number>
+                            <div class="flex items-center gap-x-1.5">
+                              <button id="balcony-half-decrease" type="button"
+                                class="w-6 h-6 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-md border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+                                data-hs-input-number-decrement
+                                onclick='decreaseCount(event, this, "balcony-full-available")'>
+                                <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                  height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="M5 12h14" />
+                                </svg>
+                              </button>
+                              <input id="balcony-full-input"
+                                class="p-0 w-6 bg-transparent border-0 text-gray-800 text-center focus:ring-0"
+                                type="text" value="0" data-hs-input-number-input>
+                              <button id="balcony-full-increase" type="button"
+                                class="w-6 h-6 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-md border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+                                data-hs-input-number-increment
+                                onclick='increaseCount(event, this, "balcony-full-available")'>
+                                <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                  height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="M5 12h14" />
+                                  <path d="M12 5v14" />
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="h-full flex items-center">
+                          <p id="balcony-full-available" style="margin: 0px; text-transform: capitalize;">50
+                            Available
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
+
+
+                <button class="btn-green done" type="submit">Go to Step 3 <i class="fa fa-angle-right"
+                    aria-hidden="true"></i></button>
+          </div>
+          </li>
+          <li>
+            <div class="wizard-heading">
+              <span>3</span> summary & payment
+            </div>
+            <div class="wizard-content">
+              <div class="cinema-sumary-area siixx">
+                <div class="media">
+                  <div class="pull-left siixx">
+                    <a href="#">
+                      <div class="sidebar-image siixx">
+                        <img src="images/movie/mv2.jpg" alt="">
+                        <div class="movies-image-head">
+                          <p>Salaar: Cease Fire - Part 1</p>
+
+                        </div>
+                      </div>
+                    </a>
+
+                  </div>
+
+                </div>
+                <div class="contact-details">
+                  <h3>Book your ticket</h3>
+
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <div class="connected-area">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> I accept all Conditions.</a>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+              <!pay button!>
+
+
+
+                <div id="paypal-button-container"></div>
+                <!-- Sample PayPal credentials (client-id) are included -->
+                <script
+                  src="https://www.paypal.com/sdk/js?client-id=AToxfzX78w9nn-jwWlv8TueXZ9Dkt2ThG9U_zrHSqxuZOgDAbC_l_s7jhYtcFqG7_lwDjvffUo0tjjnS&currency=USD&intent=capture&enable-funding=venmo"
+                  data-sdk-integration-source="integrationbuilder"></script>
+                <script>
+                  const paypalButtonsComponent = paypal.Buttons({
+                    // optional styling for buttons
+                    // https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/
+                    style: {
+                      color: "gold",
+                      shape: "rect",
+                      layout: "vertical"
+                    },
+
+                    // set up the transaction
+                    createOrder: (data, actions) => {
+                      // pass in any options from the v2 orders create call:
+                      // https://developer.paypal.com/api/orders/v2/#orders-create-request-body
+                      const createOrderPayload = {
+                        purchase_units: [
+                          {
+                            amount: {
+                              value: "8.50"
+                            }
+                          }
+                        ]
+                      };
+
+                      return actions.order.create(createOrderPayload);
+                    },
+
+                    // finalize the transaction
+                    onApprove: (data, actions) => {
+                      const captureOrderHandler = (details) => {
+                        const payerName = details.payer.name.given_name;
+                        console.log('Transaction completed');
+                      };
+
+                      return actions.order.capture().then(captureOrderHandler);
+                    },
+
+                    // handle unrecoverable errors
+                    onError: (err) => {
+                      console.error('An error prevented the buyer from checking out with PayPal');
+                    }
+                  });
+
+                  paypalButtonsComponent
+                    .render("#paypal-button-container")
+                    .catch((err) => {
+                      console.error('PayPal Buttons failed to render');
+                    });
+                </script>
+
+
+
+                <!Pay end!>
+            </div>
+          </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <div class="sidebar-area">
+          <div class="single-sidebar">
+            <div class="widget">
+              <h2 class="widget-title">Summary of your Movie</h2>
+              <div class="sidebar-content">
+                <p>Salaar: Cease Fire - Part 1</p>
+                <div class="sidebar-image siixx">
+                  <img src="images/movie/mv2.jpg" alt="">
+                  <div class="movies-image-head">
+                    <p>Salaar: Cease Fire - Part 1 </p>
+                  </div>
+                </div>
+                <div class="details">
+                  <ul>
+                    <li><span>Place: </span> Arena Cinema - Galle</li>
+                    <li><span>Time :11.30am&nbsp; &nbsp; </span> </li>
+                    <li class="entry"><span>Entries:<br>
+                        1x Normal</span>&nbsp;</li>
+                    <li class="entry">&nbsp; <h1><span id="total-price">LKR 0.00</span></h1>
+                    </li>
+                  </ul>
+                </div>
+
+
               </div>
             </div>
           </div>
         </div>
-        <!-- Single Movie End Here -->
-        <!-- Zooks Promos Start Here -->
-        <div class="zooks-promos-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                       
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="total-promos-area">
-                            <div class="single-promos">
-                                <a href="#"><img src="images/promos/pr1.jpg" alt=""></a>
-                            </div>
-                            <div class="single-promos">
-                                <a href="#"><img src="images/promos/pr2.jpg" alt=""></a>
-                            </div>
-                            <div class="single-promos">
-                                <a href="#"><img src="images/promos/pr3.jpg" alt=""></a>
-                            </div>
-                            <div class="single-promos">
-                                <a href="#"><img src="images/promos/pr4.jpg" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Single Movie End Here -->
+  <!-- Zooks Promos Start Here -->
+  <div class="zooks-promos-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
         </div>
-        <!-- Zooks Promos End Here -->
-        <!-- Footer Start Here -->
-       
-<footer class="footer-distributed">
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="total-promos-area">
+            <div class="single-promos">
+              <a href="#"><img src="images/promos/pr1.jpg" alt=""></a>
+            </div>
+            <div class="single-promos">
+              <a href="#"><img src="images/promos/pr2.jpg" alt=""></a>
+            </div>
+            <div class="single-promos">
+              <a href="#"><img src="images/promos/pr3.jpg" alt=""></a>
+            </div>
+            <div class="single-promos">
+              <a href="#"><img src="images/promos/pr4.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Zooks Promos End Here -->
+  <!-- Footer Start Here -->
 
-			<div class="footer-left">
-<p class="footer-links">
-					<a href="index.html" class="link-1">Home</a>
-					<a href="trailers.html">Trailers</a>
-                                      <a href="shows.html">Shows</a>
-                                       <a href="#">Contact</a>
-				</p>
+  <footer class="footer-distributed">
 
-				<p class="footer-company-name">ARENA CINEMA © 2024</p>
-			</div>
+    <div class="footer-left">
+      <p class="footer-links">
+        <a href="index.html" class="link-1">Home</a>
+        <a href="trailers.html">Trailers</a>
+        <a href="shows.html">Shows</a>
+        <a href="#">Contact</a>
+      </p>
 
-			<div class="footer-center">
+      <p class="footer-company-name">ARENA CINEMA © 2024</p>
+    </div>
 
-				<div>
-					<i class="fa fa-map-marker"></i>
-					<p>ARENA CINEMA LK , Colombo 07&nbsp;</p>
-				</div>
+    <div class="footer-center">
 
-				<div>
-					<i class="fa fa-phone"></i>
-					<p>+94 71 566 8451</p>
-				</div>
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p>ARENA CINEMA LK , Colombo 07&nbsp;</p>
+      </div>
 
-				<div>
-					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:support@company.com">arenacinemaonline@gmail.com</a></p>
-				</div>
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+94 71 566 8451</p>
+      </div>
 
-			</div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:support@company.com">arenacinemaonline@gmail.com</a></p>
+      </div>
 
-			<div class="footer-right">
+    </div>
 
-				<p class="footer-company-about">
-					<span>About the company</span>
-					ARENA CINEMA is a company that provides customers with a high quality and convenient movie watching experience.ARENA CINEMAs is committed to customer satisfaction and constantly innovating to provide the best possible experience to movie lovers.
-				</p>
+    <div class="footer-right">
 
-				<div class="footer-icons">
+      <p class="footer-company-about">
+        <span>About the company</span>
+        ARENA CINEMA is a company that provides customers with a high quality and convenient movie watching
+        experience.ARENA CINEMAs is committed to customer satisfaction and constantly innovating to provide the best
+        possible experience to movie lovers.
+      </p>
 
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-github"></i></a>
+      <div class="footer-icons">
 
-				</div>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
 
-			</div>
+      </div>
 
-		</footer>
-        <!-- Footer End Here -->
-        <!-- all js here -->
-        <!-- jquery latest version -->
-        <script src="js/vendor/jquery-1.12.0.min.js"></script>
-        <!-- bootstrap js -->
-        <script src="js/bootstrap.min.js"></script>
-        <!-- owl.carousel js -->
-        <script src="js/owl.carousel.min.js"></script>
-        <!-- meanmenu js -->
-        <script src="js/jquery.meanmenu.js"></script>
-        <!-- jquery-ui js -->
-        <script src="js/jquery-ui.min.js"></script>
-        <!-- wow js -->
-        <script src="js/wow.min.js"></script>
-        <!-- plugins js -->
-        <script src="js/plugins.js"></script>
-        <!-- jQuery MixedIT Up -->
-        <script src="js/jquery.mixitup.min.js" type="text/javascript"></script>
-        <!-- main js -->
-        <script src="js/main.js"></script>
-<script  src="./js/script.js"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js'></script>
-    </body>
+    </div>
+
+  </footer>
+  <!-- Footer End Here -->
+  <!-- all js here -->
+  <!-- jquery latest version -->
+  <script src="js/vendor/jquery-1.12.0.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- owl.carousel js -->
+  <script src="js/owl.carousel.min.js"></script>
+  <!-- meanmenu js -->
+  <script src="js/jquery.meanmenu.js"></script>
+  <!-- jquery-ui js -->
+  <script src="js/jquery-ui.min.js"></script>
+  <!-- wow js -->
+  <script src="js/wow.min.js"></script>
+  <!-- plugins js -->
+  <script src="js/plugins.js"></script>
+  <!-- jQuery MixedIT Up -->
+  <script src="js/jquery.mixitup.min.js" type="text/javascript"></script>
+  <!-- main js -->
+  <script src="js/main.js"></script>
+  <script src="js/qtyInput.js"></script>
+  <script src="./js/script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js'></script>
+</body>
+
 </html>
